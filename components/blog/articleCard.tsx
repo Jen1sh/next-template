@@ -1,32 +1,36 @@
 import React from "react";
 
-const ArticleCard: React.FC = () => {
-  return (
-    <div className="bg-gray-900 p-3 rounded-lg max-w-sm mx-auto">
-      <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-        <img
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c"
-          alt="Office setup"
-          className="w-full h-48 object-cover"
-        />
-        <div className="flex flex-row mt-3 justify-end px-5">
-          <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide ">
-            Article
-          </span>
-        </div>
+interface Props {
+  title: string;
+  slug: string;
+}
 
-        <div className="px-4 mt-2 pb-2">
-          <div className="flex justify-between items-center mb-2">
-            <h2 className="text-xl font-bold text-white text-left">
-              Our first office
-            </h2>
-          </div>
-          <p className="text-gray-400 text-left">
-            Over the past year, Volosoft has undergone many changes! After
-            months of preparation and some hard work, we moved to our new
-            office.
-          </p>
-        </div>
+const ArticleCard: React.FC<Props> = ({ slug, title }) => {
+  return (
+    <div className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 w-full">
+      <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <p>{title}</p>
+      </h2>
+      <div className="flex justify-between items-center">
+        <div className="flex items-center space-x-4"></div>
+        <a
+          href="#"
+          className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+        >
+          Read more
+          <svg
+            className="ml-2 w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </a>
       </div>
     </div>
   );
