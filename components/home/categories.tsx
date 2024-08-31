@@ -32,7 +32,8 @@ const tickIcon = (
 );
 
 const Categories = () => {
-  const [selectedTile, setSelectedTile] = useState<string>("Road trip");
+  const [selectedTile, setSelectedTile] =
+    useState<ICategory["title"]>("Road trip");
 
   const data: ICategory[] = [
     {
@@ -55,6 +56,8 @@ const Categories = () => {
     },
   ];
 
+  const selectedCategory = data.find((item) => item.title === selectedTile);
+
   return (
     <div className="flex flex-col items-center w-full bg-gray-900 rounded-3xl p-5 mt-10">
       <h1 className={title({ color: "pink", size: "md" })}>Plan your trip</h1>
@@ -62,37 +65,46 @@ const Categories = () => {
         {data.map((category) => (
           <div
             key={category.title}
-            className={`cursor-pointer p-5 rounded-lg text-center  flex flex-col justify-center items-center
+            role="button"
+            tabIndex={0}
+            className={`cursor-pointer p-5 rounded-lg text-center flex flex-col justify-center items-center
               ${
                 selectedTile === category.title
                   ? " text-blue-500"
                   : " text-white"
               }`}
             onClick={() => setSelectedTile(category.title)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                setSelectedTile(category.title);
+              }
+            }}
           >
             <div className="text-3xl mb-2">{category.icon}</div>
             <div className="text-md font-semibold">{category.title}</div>
           </div>
         ))}
       </div>
-      {selectedTile && (
+      {selectedCategory && (
         <div className="flex flex-col mt-2 p-5 w-full justify-between  bg-white border border-gray-200 rounded-lg shadow md:flex-row  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
           <div className="flex flex-col py-5 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {data.find((item) => item.title === selectedTile)?.subtitle}
+              {selectedCategory.subtitle}
             </h5>
             <ul className="list-none ">
-              {data
-                .find((category) => category.title === selectedTile)
-                ?.points.map((point, index) => (
-                  <li key={index} className="flex items-center text-lg mb-2">
-                    <span className="mr-2">{tickIcon}</span>
-                    {point}
-                  </li>
-                ))}
+              {selectedCategory.points.map((point, index) => (
+                <li key={index} className="flex items-center text-lg mb-2">
+                  <span className="mr-2">{tickIcon}</span>
+                  {point}
+                </li>
+              ))}
             </ul>
           </div>
-          <img className="object-cover w-2/5" src="/chart.svg" alt="" />
+          <img
+            className="object-cover w-2/5"
+            src="/chart.svg"
+            alt="Chart illustration"
+          />
         </div>
       )}
     </div>

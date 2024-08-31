@@ -125,6 +125,7 @@ const Features = () => {
               }`}
             // onClick={() => setSelectedTile(category.title)}
             onMouseOver={() => setSelectedTile(category.title)}
+            onFocus={() => {}}
           >
             <div className="text-3xl mb-2">{category.icon}</div>
             <div className="text-md font-semibold">{category.title}</div>

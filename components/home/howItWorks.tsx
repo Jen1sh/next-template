@@ -106,19 +106,19 @@ const HowItWorks = () => {
                   </h4>
                   <div className="flex space-x-5 mb-5">
                     <a
-                      href="#"
+                      href="!#"
                       className="text-4xl text-green-500 hover:text-green-700"
                     >
                       <i className="icofont-brand-android-robot"></i>
                     </a>
                     <a
-                      href="#"
+                      href="!#"
                       className="text-4xl text-gray-300 hover:text-white"
                     >
                       <i className="icofont-brand-apple"></i>
                     </a>
                     <a
-                      href="#"
+                      href="!#"
                       className="text-4xl text-blue-500 hover:text-blue-700"
                     >
                       <i className="icofont-brand-windows"></i>

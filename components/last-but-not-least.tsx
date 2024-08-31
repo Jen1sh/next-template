@@ -18,9 +18,9 @@ export const LastButNotLeast = () => {
                 <form action="#">
                   <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                     <div className="relative w-full">
-                      <label className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                      <p className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                         Email address
-                      </label>
+                      </p>
                       <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                         <svg
                           className="w-5 h-5 text-gray-500 dark:text-gray-400"

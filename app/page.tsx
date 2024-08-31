@@ -1,28 +1,14 @@
-import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code";
-import { button as buttonStyles } from "@nextui-org/theme";
-
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
 import Badge from "@/components/chip";
-import TrustedBy from "@/components/trusted";
-import PrototypeImg from "@/components/prototype-img";
-import FeaturesBento from "@/components/feature-bento";
-import LightBg from "@/components/light-bg";
-import Integrations from "@/components/integrations";
-import { LastButNotLeast } from "@/components/last-but-not-least";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faApple, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
-import "../styles/hero.css";
 import Categories from "@/components/home/categories";
 import Features from "@/components/home/features";
 import HowITWorks from "@/components/home/howItWorks";
+import { LastButNotLeast } from "@/components/last-but-not-least";
+import { title } from "@/components/primitives";
+import "../styles/hero.css";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4  ">
+    <section className="flex flex-col items-center justify-center gap-4">
       <Badge />
       <div className="inline-block max-w-sm lg:max-w-4xl text-center justify-center text-2xl">
         <h1 className={title({ size: "lg" })}>
@@ -30,7 +16,7 @@ export default function Home() {
         </h1>
         <br />
         <h1 className={title({ color: "blue", size: "lg" })}>
-          Plan Your Solo & Group RoadTrip.&nbsp;
+          Plan Your Solo &amp; Group RoadTrip.&nbsp;
         </h1>
         <br />
         <h2 className="font-normal text-gray-500 mt-2">
@@ -42,7 +28,7 @@ export default function Home() {
         <div className="flex justify-center w-full max-w-md gap-6">
           <button
             type="button"
-            className="flex items-center justify-center w-48  text-white bg-black h-14 rounded-xl"
+            className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
           >
             <div className="mr-3">
               <svg viewBox="0 0 384 512" width="30">
@@ -61,7 +47,7 @@ export default function Home() {
           </button>
           <button
             type="button"
-            className="flex items-center justify-center w-48  text-white bg-black rounded-lg h-14"
+            className="flex items-center justify-center w-48 text-white bg-black rounded-lg h-14"
           >
             <div className="mr-3">
               <svg viewBox="30 336.7 120.9 129.2" width="30">
@@ -94,12 +80,12 @@ export default function Home() {
         <p className="mt-5 text-xl">
           🚀 Connecting Tour Guides, Operators, and Roadtrippers for Seamless
           Group Travel Experiences. Simplifies your roadtrips management powered
-          By Generative AI, so you can focus on making your memories. <br />{" "}
+          by Generative AI, so you can focus on making your memories. <br />
           Welcome to TripSyncer, where every journey is an opportunity for
-          discovery and connection. Whether you're a tour guide eager to
+          discovery and connection. Whether you&apos;re a tour guide eager to
           showcase the wonders of your city, a tour operator planning the next
           unforgettable road trip, or a traveler seeking group travel without
-          the hassle, we're here to make your experience smoother and more
+          the hassle, we&apos;re here to make your experience smoother and more
           enjoyable. Get ready to plan, manage, and embark on your next
           adventure with ease.
         </p>

@@ -10,7 +10,7 @@ export const siteConfig = {
     },
     {
       label: "Feature",
-      href: "#features",
+      href: "/#features",
     },
     {
       label: "Pricing",
@@ -62,8 +62,8 @@ export const siteConfig = {
   links: {
     github: "https://github.com/DarkInventor",
     twitter: "https://twitter.com/kathanmehtaa",
-    docs: "#",
-    discord: "#",
-    sponsor: "#",
+    docs: "!#",
+    discord: "!#",
+    sponsor: "!#",
   },
 };

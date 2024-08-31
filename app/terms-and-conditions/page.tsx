@@ -78,8 +78,8 @@ const TermsAndConditions: React.FC = () => {
                       <i className="icofont-check-circled"></i>
                     </span>
                     <p>
-                      Storage: We require access to your device's storage to
-                      save trip information and photos locally.
+                      Storage: We require access to your device&apos;s storage
+                      to save trip information and photos locally.
                     </p>
                   </li>
                   <li className="flex items-start">
@@ -100,7 +100,7 @@ const TermsAndConditions: React.FC = () => {
                 </h3>
                 <p className="text-gray-300">
                   You agree not to use the app for any unlawful purpose, to
-                  infringe on any third party's rights, or to breach any
+                  infringe on any third party&apos;s rights, or to breach any
                   standards, content guidelines, or codes of conduct.
                 </p>
               </div>
