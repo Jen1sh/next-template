@@ -55,6 +55,7 @@ export default function Home() {
                   fill="#FFD400"
                   d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"
                 ></path>
+                app/layout.tsx
                 <path
                   fill="#FF3333"
                   d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"
@@ -77,19 +78,20 @@ export default function Home() {
             </div>
           </button>
         </div>
-        <p className="mt-5 text-xl">
-          🚀 Connecting Tour Guides, Operators, and Roadtrippers for Seamless
-          Group Travel Experiences. Simplifies your roadtrips management powered
-          by Generative AI, so you can focus on making your memories. <br />
-          Welcome to TripSyncer, where every journey is an opportunity for
-          discovery and connection. Whether you&apos;re a tour guide eager to
-          showcase the wonders of your city, a tour operator planning the next
-          unforgettable road trip, or a traveler seeking group travel without
-          the hassle, we&apos;re here to make your experience smoother and more
-          enjoyable. Get ready to plan, manage, and embark on your next
-          adventure with ease.
-        </p>
       </div>
+      <p className=" text-xl p-5 text-center">
+        🚀 Connecting Tour Guides, Operators, and Roadtrippers for Seamless
+        Group Travel Experiences. Simplifies your roadtrips management powered
+        by Generative AI, so you can focus on making your memories. <br />
+        Welcome to TripSyncer, where every journey is an opportunity for
+        discovery and connection. Whether you&apos;re a tour guide eager to
+        showcase the wonders of your city, a tour operator planning the next
+        unforgettable road trip, or a traveler seeking group travel without the
+        hassle, we&apos;re here to make your experience smoother and more
+        enjoyable. Get ready to plan, manage, and embark on your next adventure
+        with ease.
+      </p>
+
       <Features />
       <Categories />
       <HowITWorks />

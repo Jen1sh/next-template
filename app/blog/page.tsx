@@ -61,12 +61,10 @@ export default function BlogPage() {
   ];
 
   return (
-    <div className="flex flex-col max-w-full w-full">
-      <div className="  gap-6  ">
-        {blogs.map((item, index) => (
-          <ArticleCard slug={item.slug} title={item.title} key={index} />
-        ))}
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+      {blogs.map((item, index) => (
+        <ArticleCard slug={item.slug} title={item.title} key={index} />
+      ))}
     </div>
   );
 }

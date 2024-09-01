@@ -22,21 +22,6 @@ interface ICategory {
   image: string;
 }
 
-const tickIcon = (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="w-4 h-4 text-green-500"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    <path d="M20 6L9 17l-5-5" />
-  </svg>
-);
-
 const Features = () => {
   const [selectedTile, setSelectedTile] = useState<string>("Trip Planning");
 
@@ -110,31 +95,32 @@ const Features = () => {
   return (
     <div
       id="features"
-      className="flex flex-col items-center w-full bg-white/10 rounded-3xl p-5 mt-16 bg-opacity-20 backdrop-filter backdrop-blur-lg "
+      className="flex flex-col items-center w-full bg-white/10 rounded-3xl p-5 mt-16 bg-opacity-20 backdrop-filter backdrop-blur-lg"
     >
       <h1 className={title({ color: "yellow", size: "md" })}>Features</h1>
-      <div className="flex justify-center items-start w-full max-w-3xl space-x-2 gap-12">
-        {data.map((category) => (
-          <div
-            key={category.title}
-            className={`cursor-pointer p-5 rounded-lg text-center  flex flex-col justify-center items-center
-              ${
-                selectedTile === category.title
-                  ? " text-blue-500"
-                  : " text-white"
-              }`}
-            // onClick={() => setSelectedTile(category.title)}
-            onMouseOver={() => setSelectedTile(category.title)}
-            onFocus={() => {}}
-          >
-            <div className="text-3xl mb-2">{category.icon}</div>
-            <div className="text-md font-semibold">{category.title}</div>
-          </div>
-        ))}
+      <div className="w-full  overflow-x-auto lg:overflow-visible">
+        <div className="flex lg:flex-wrap space-x-4 lg:space-x-0 lg:justify-center lg:gap-10">
+          {data.map((category) => (
+            <div
+              key={category.title}
+              className={`cursor-pointer px-1 py-5 rounded-lg text-center flex-shrink-0 flex flex-col justify-center items-center
+                ${
+                  selectedTile === category.title
+                    ? "text-blue-500"
+                    : "text-white"
+                }`}
+              onMouseOver={() => setSelectedTile(category.title)}
+              onFocus={() => {}}
+            >
+              <div className="text-3xl mb-2">{category.icon}</div>
+              <div className="text-md font-semibold">{category.title}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {selectedTile && (
-        <div className="grid grid-cols-2 mt-2 p-5 w-full md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1  bg-white border border-gray-200 rounded-lg shadow md:flex-row  dark:border-slate-950 dark:bg-black">
+        <div className="grid lg:grid-cols-2  mt-2 p-5 w-full md:grid-cols-1  bg-white border border-gray-200 rounded-lg shadow md:flex-row dark:border-slate-950 dark:bg-black">
           <div className="py-5 flex flex-col justify-center leading-normal gap-5">
             <h5 className="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
               {data.find((item) => item.title === selectedTile)?.subtitle}

@@ -17,10 +17,18 @@ import NextLink from "next/link";
 
 import { siteConfig } from "@/config/site";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { useReducer } from "react";
 
 export const Navbar = () => {
+  const path = usePathname();
+
+  const [isMenuOpen, setIsMenuOpen] = useReducer((current) => !current, false);
+
   return (
     <NextUINavbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
       position="sticky"
       className="top-0 dark:border-none border rounded-full max-w-[60%] flex justify-center items-center mx-auto mt-3 bg-opacity-20 backdrop-filter backdrop-blur-lg bg-white/10"
     >
@@ -98,9 +106,10 @@ export const Navbar = () => {
           {siteConfig.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`} className="ml-2">
               <Link
-                color={index === 2 ? "primary" : "foreground"}
-                href="#"
+                color={item.href === path ? "primary" : "foreground"}
+                href={item.href}
                 size="lg"
+                onPress={setIsMenuOpen}
               >
                 {item.label}
               </Link>
