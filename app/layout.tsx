@@ -123,7 +123,7 @@ export default function RootLayout({
                       <div className="flex justify-center flex-col gap-3">
                         <a
                           href="https://apps.apple.com/us/app/tripsyncer/id6502956755"
-                          rel="opener"
+                          rel="noopener noreferrer"
                           target="_blank"
                           className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
                         >
@@ -144,7 +144,7 @@ export default function RootLayout({
                         </a>
                         <a
                           href="https://play.google.com/store/apps/details?id=com.tripsyncer"
-                          rel="opener"
+                          rel="noopener noreferrer"
                           target="_blank"
                           className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
                         >

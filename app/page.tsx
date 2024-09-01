@@ -27,7 +27,7 @@ export default function Home() {
       <div className="flex justify-center w-full max-w-md flex-col gap-6 lg:flex-row items-center">
         <a
           href="https://apps.apple.com/us/app/tripsyncer/id6502956755"
-          rel="opener"
+          rel="noopener noreferrer"
           target="_blank"
           className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
         >
@@ -48,7 +48,7 @@ export default function Home() {
         </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.tripsyncer"
-          rel="opener"
+          rel="noopener noreferrer"
           target="_blank"
           className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
         >
