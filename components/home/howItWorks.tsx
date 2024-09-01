@@ -128,7 +128,7 @@ const HowItWorks = () => {
                     {item.description}
                   </p>
                 </div>
-                <div className="text-4xl font-extrabold text-purple-500 mt-10 lg:mt-0 lg:w-1/6 lg:block hidden">
+                <div className="text-7xl font-extrabold text-white mt-10 lg:mt-0 lg:w-1/6 lg:block hidden">
                   <h3>{index + 1}</h3>
                 </div>
                 <div

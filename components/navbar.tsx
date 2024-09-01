@@ -29,8 +29,7 @@ export const Navbar = () => {
     <NextUINavbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      position="sticky"
-      className="top-0 dark:border-none border rounded-full max-w-[60%] flex justify-center items-center mx-auto mt-3 bg-opacity-20 backdrop-filter backdrop-blur-lg bg-white/10"
+      className="top-2 fixed dark:border-none border rounded-full max-w-[80%] flex justify-center items-center mx-auto bg-opacity-20 mt-2 backdrop-filter backdrop-blur-lg bg-white/10"
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
@@ -38,7 +37,7 @@ export const Navbar = () => {
             {/* <p className="font-bold text-inherit">Easy NextUI</p> */}
             <Image
               alt="logo"
-              className="z-0 w-full h-full object-cover"
+              className="z-0 w-full h-auto oject-cover"
               width={100}
               height={100}
               layout="responsive"

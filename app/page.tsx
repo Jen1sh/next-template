@@ -8,7 +8,7 @@ import "../styles/hero.css";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4">
+    <section className="flex flex-col items-center justify-center gap-4 ">
       <Badge />
       <div className="inline-block max-w-sm lg:max-w-4xl text-center justify-center text-2xl">
         <h1 className={title({ size: "lg" })}>
