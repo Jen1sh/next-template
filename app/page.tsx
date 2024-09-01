@@ -25,8 +25,10 @@ export default function Home() {
         </h2>
       </div>
       <div className="flex justify-center w-full max-w-md flex-col gap-6 lg:flex-row items-center">
-        <button
-          type="button"
+        <a
+          href="https://apps.apple.com/us/app/tripsyncer/id6502956755"
+          rel="opener"
+          target="_blank"
           className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
         >
           <div className="mr-3">
@@ -43,10 +45,12 @@ export default function Home() {
               App Store
             </div>
           </div>
-        </button>
-        <button
-          type="button"
-          className="flex items-center justify-center w-48 text-white bg-black rounded-lg h-14"
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.tripsyncer"
+          rel="opener"
+          target="_blank"
+          className="flex items-center justify-center w-48 text-white bg-black h-14 rounded-xl"
         >
           <div className="mr-3">
             <svg viewBox="30 336.7 120.9 129.2" width="30">
@@ -75,7 +79,7 @@ export default function Home() {
               Google Play
             </div>
           </div>
-        </button>
+        </a>
       </div>
       <p className=" text-xl p-5 text-center">
         🚀 Connecting Tour Guides, Operators, and Roadtrippers for Seamless
@@ -91,7 +95,7 @@ export default function Home() {
       </p>
 
       <Features />
-      <Categories />
+      {/* <Categories /> */}
       <HowITWorks />
       <LastButNotLeast />
     </section>

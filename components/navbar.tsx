@@ -37,7 +37,7 @@ export const Navbar = () => {
             {/* <p className="font-bold text-inherit">Easy NextUI</p> */}
             <Image
               alt="logo"
-              className="z-0 w-full h-auto oject-cover"
+              className="z-0 w-full h-auto oject-cover "
               width={100}
               height={100}
               layout="responsive"
