@@ -1,10 +1,37 @@
 /* eslint-disable react/display-name */
 "use client";
 import { sectionWrapper } from "@/components/primitives";
+import { FormEvent, useEffect, useState } from "react";
 // import { FeaturesGrid } from "@/components/features-grid";
 // import landingContent from "@/content/landing";
 
 export const LastButNotLeast = () => {
+  const [email, setEmail] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+  const [error, setError] = useState<string>("");
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    const res = await fetch("/api/subscribe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+
+    const data = await res.json();
+    if (res.ok) {
+      setError("");
+      setMessage(`Successfully subscribed!`);
+    } else {
+      setMessage("");
+      setError(data.error);
+    }
+    setEmail("");
+  };
+
   return (
     <section className={sectionWrapper({ class: "mt-16 lg:mt-4" })}>
       <div className="flex flex-col gap-0 md:gap-8">
@@ -15,7 +42,7 @@ export const LastButNotLeast = () => {
                 <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">
                   Sign up for our newsletter
                 </h2>
-                <form action="#">
+                <form onSubmit={handleSubmit}>
                   <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                     <div className="relative w-full">
                       <p className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -36,6 +63,8 @@ export const LastButNotLeast = () => {
                         className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                         placeholder="Enter your email"
                         type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         id="email"
                       />
                     </div>
@@ -49,6 +78,10 @@ export const LastButNotLeast = () => {
                     </div>
                   </div>
                 </form>
+                {message && (
+                  <p className="text-1x1 text-green-400">{message}</p>
+                )}
+                {error && <p className="text-1x1 text-red-400">!!{error}!!</p>}
               </div>
             </div>
           </section>

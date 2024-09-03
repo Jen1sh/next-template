@@ -59,8 +59,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <>
-      <div className="mt-10" />
+    <div id="how">
       <div className={titleWrapper({ class: "items-center mb-5" })}>
         <div>
           <h1 className={title({ size: "lg" })}>Last&nbsp;</h1>
@@ -175,7 +174,7 @@ const HowItWorks = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

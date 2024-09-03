@@ -35,14 +35,7 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             {/* <p className="font-bold text-inherit">Easy NextUI</p> */}
-            <Image
-              alt="logo"
-              className="z-0 w-full h-auto oject-cover "
-              width={100}
-              height={100}
-              layout="responsive"
-              src="/logo.png"
-            />
+            <img alt="logo" className="z-0 w-40 oject-cover" src="/logo.png" />
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2 lg:justify-center lg:items-center lg:mx-auto">

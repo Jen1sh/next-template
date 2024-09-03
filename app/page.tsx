@@ -15,13 +15,12 @@ export default function Home() {
           Discover the Best Way to&nbsp;
         </h1>
         <br />
-        <h1 className={title({ color: "blue", size: "lg" })}>
+        <h1 className={title({ color: "yellow", size: "lg" })}>
           Plan Your Solo &amp; Group RoadTrip.&nbsp;
         </h1>
         <br />
         <h2 className="font-normal text-gray-500 mt-2">
-          🚗 Streamlining your trip planning so you can focus on making
-          memories.
+          Streamlining your trip planning so you can focus on making memories.
         </h2>
       </div>
       <div className="flex justify-center w-full max-w-md flex-col gap-6 lg:flex-row items-center">
@@ -81,18 +80,20 @@ export default function Home() {
           </div>
         </a>
       </div>
-      <p className=" text-xl p-5 text-center">
+      <span className="text-xl p-5 text-center">
         🚀 Connecting Tour Guides, Operators, and Roadtrippers for Seamless
         Group Travel Experiences. Simplifies your roadtrips management powered
-        by Generative AI, so you can focus on making your memories. <br />
-        Welcome to TripSyncer, where every journey is an opportunity for
-        discovery and connection. Whether you&apos;re a tour guide eager to
-        showcase the wonders of your city, a tour operator planning the next
-        unforgettable road trip, or a traveler seeking group travel without the
-        hassle, we&apos;re here to make your experience smoother and more
-        enjoyable. Get ready to plan, manage, and embark on your next adventure
-        with ease.
-      </p>
+        by Generative AI, so you can focus on making your memories.
+        <span className="hidden lg:inline-block sm:hidden md:hidden">
+          Welcome to TripSyncer, where every journey is an opportunity for
+          discovery and connection. Whether you&apos;re a tour guide eager to
+          showcase the wonders of your city, a tour operator planning the next
+          unforgettable road trip, or a traveler seeking group travel without
+          the hassle, we&apos;re here to make your experience smoother and more
+          enjoyable. Get ready to plan, manage, and embark on your next
+          adventure with ease.
+        </span>
+      </span>
 
       <Features />
       {/* <Categories /> */}

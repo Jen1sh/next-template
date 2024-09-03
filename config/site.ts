@@ -10,19 +10,16 @@ export const siteConfig = {
     },
     {
       label: "Feature",
-      href: "/#features",
+      href: "#features",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "How It Works",
+      href: "#how",
     },
+
     {
       label: "Blog",
       href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
     },
   ],
   navMenuItems: [
