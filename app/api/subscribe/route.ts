@@ -17,9 +17,9 @@ export async function POST(req: NextRequest) {
     // Load the service account credentials from JSON file
     const credentialsPath = path.join(
       process.cwd(),
-      "/config/hip-polymer-327607-cb1a3b9a6bd9.json"
+      process.env.NEXT_PUBLIC_GOOGLE_CREDENTIAL_PATH
     );
-    const spreadsheetId = "1oDRpKMIDAXvpBLiLj-QIQ_OKQ4b4V0S9e2ofM0JdkiY";
+    const spreadsheetId = process.env.NEXT_PUBLIC_SHEET_ID;
 
     const auth = new google.auth.GoogleAuth({
       keyFile: credentialsPath,
