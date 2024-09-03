@@ -3,13 +3,21 @@ import React from "react";
 interface Props {
   title: string;
   slug: string;
+  image: string;
 }
 
-const ArticleCard: React.FC<Props> = ({ slug, title }) => {
+const ArticleCard: React.FC<Props> = ({ slug, title, image }) => {
   return (
-    <div className="p-6 re bg-gray-800 rounded-lg border border-gray-200 shadow-md light:bg-gray-800 dark:border-gray-700 flex flex-col hover:bg-gray-700 cursor-pointer">
+    <div className="p-6  bg-gray-800 rounded-lg border border-gray-200 shadow-md light:bg-gray-800 dark:border-gray-700 flex flex-col hover:bg-gray-700 cursor-pointer">
+      <div className="relative flex justify-center w-full ">
+        <img
+          src={image}
+          alt={title}
+          className="object-cover transition duration-150 ease-linear transform group-hover:scale-105"
+        />
+      </div>
       <div className="flex">
-        <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h2 className="my-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           <p>{title}</p>
         </h2>
       </div>
