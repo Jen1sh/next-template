@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "hip-polymer-327607",
+  "private_key_id": "4ac5c0a82d326dcf027a080251aab89e9b2cc049",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvNLi2PqMd/1fX\nSsbqmdrYHQs3YnxwJXa/vbdCQ2OQP8m5djayZPrxYNOhoERQyoj/4wPEEkuHMd7K\naGAjdlD0nmMz9dhTVTuvi9EqQxmt3boKf9/xPi7gleY4d/x6ew1cSiLq4nPUeslb\nDsTw2xNeWGsb+EJhqCBhsf9FJsfQiL73puE75mGyd28QUlyLdmdjc1Yi0OEJJ+Br\nVb/ZLkS3bx+cHkUJ01gamD6SzzQyKfwn7yz+aX9A3MPK+jfBps/pLnjn1fVheELE\nIXl+hV/uVhwxY4cPoDNl0xvM4YRjRMwL+AwevTJ6WC7+n4i/9lZfr9CXgFs9XgqY\nLYi02/VfAgMBAAECggEAFN2lhebNzFvFnVlFeVkbbBOBa3YqNbzweINimNyntd0y\n7Ah9GR/XlvmeGqiYmjqUuEzT/Pzky9QPoXFuyapkl81pKR4FRl9nPU/ceDkHjOJU\nLr3t8LAkKxEPGviHNBsFi1E0+V5AxzRcWKDYqYqdsuW609jsJu879AabzSOCNn5w\nH0+KvC3uk+zr+nXxuNmzNcwUOKSJNB7hyajNzN54Ii2Hl8kDXliT3td5mDw2TCsZ\nXxk442Y+ZoTZxOquJyA+raHUroatrwqOa98tcUP2j9mRmKU9zmEx7nNnsoJE2VDB\nbPaB/IKKjhWTVexvbHYmUKpvi7JE69bQX/gNuNJZGQKBgQDgsk3hgL0g7Ymt7U1p\niIztQw3JyMwNciShdID99byfsHMJURKs5MaO0SlNGlZrCRf13uJqJFPGrgm66qZ9\n6hd0wQCcfAmID+JrensiDEsP1rTihJxaY9L/XOQSZJj1O1fLdLZ+5Av6i+SDcGGy\nogbcq0Z+qkuDRHr5XO+8gBk4rQKBgQDHnVwUoi3JjDwdlgRR8JiXbtfzxw1kaTBh\njMVb/b2CgEFmYRERGPLeGcwUWJBzFQRUV3ZPcWJyD/qdPGnMN1JKNCJe84s2+qin\nF1k4PUavFfPl7kivUuo4eXUuigkDzfhC0n5+qmw9MRA1VHTUaizqioB4MwKCS+Dc\n25WDfmSruwKBgH66sghElucScjuhgq7J8EoFLqqnUMcooJZbYkFaLseWOlt/2Vug\nMIjuWS/+cc0utM/cpLCeyo1dLWm53KtZs18LV+/qWWnfI6Hg07/xVQia3SyBBLpK\nYP/cAVqKWGa/0JWUvzU0I7ls2zZy1PduQRaGl1zraWmg3wbzrtcPHKqFAoGAPdxg\nauyPsARLpQeWsyYSw+tP9XZcih+nJLQRfZ63GjhRDD9MoLXQnk/0VOHVcjSzMMgi\nHCCRV7PoAM52IxmJ4QEjHbXwEMvBdHbh6XHj8+KjwUAFOoBBodrSG+gfPxSXuW2u\nUebSwGvyD/Tqd+Gnpc/iXF3Ci0qklw1d2nBTFn0CgYBoWXXAeqANGqwQymn3RcQW\n6sSdovMp4h23repofFdkUpZ/FOIJwgF5P0bfC0681U0Vs5lam6+iv/8SqrNJt3Zu\nX8y4kVyBc8IrScHSmmpLpvSmSiDIZLjnH0CG4L6sAcsEuYUaBFLwgi8pTHJ4CvP2\naBbTRJNX8HDfMA3BBs5qEg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "email-list@hip-polymer-327607.iam.gserviceaccount.com",
+  "client_id": "109443706692670595509",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/email-list%40hip-polymer-327607.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

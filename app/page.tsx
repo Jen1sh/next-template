@@ -15,8 +15,13 @@ export default function Home() {
           Discover the Best Way to&nbsp;
         </h1>
         <br />
-        <h1 className={title({ color: "yellow", size: "lg" })}>
-          Plan Your Solo &amp; Group RoadTrip.&nbsp;
+        <h1 className={title({ color: "blue", size: "lg" })}>
+          Plan Your{" "}
+          <span className={title({ size: "lg", color: "yellow" })}>
+            Solo &amp;{" "}
+          </span>{" "}
+          <span className={title({ size: "lg", color: "yellow" })}>Group</span>{" "}
+          RoadTrip.&nbsp;
         </h1>
         <br />
         <h2 className="font-normal text-gray-500 mt-2">

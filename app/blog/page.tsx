@@ -20,7 +20,7 @@ export default function BlogPage() {
         "The Ultimate California Road Trip Guide: Top Places to Explore, Eat, and Stay",
       slug: "https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDk3ZTA0MzljLTYzMGYtNDJiNS1hYTNlLTMyZjI1ZjkwZTBjYw?s=1",
       image:
-        "https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg",
+        "https://st5.depositphotos.com/2576711/67771/i/1600/depositphotos_677712510-stock-photo-city-skyline-los-angeles-downtown.jpg",
     },
     {
       title:
@@ -47,7 +47,7 @@ export default function BlogPage() {
         "3 Days Pokhara Tour from Kathmandu in 2024: Explore the Beauty of Nepal",
       slug: "https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJDc2ODdkZjRmLTAyZTUtNDRjNC04NjI0LWJhZGJhMWE5NzhiMQ?s=1",
       image:
-        "https://st5.depositphotos.com/2576711/67771/i/1600/depositphotos_677712510-stock-photo-city-skyline-los-angeles-downtown.jpg",
+        "https://st4.depositphotos.com/17269844/21994/i/600/depositphotos_219942780-stock-photo-translation-main-stupa-world-peace.jpg",
     },
     {
       title:

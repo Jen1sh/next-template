@@ -47,10 +47,10 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <footer className="bg-white dark:bg-gray-900">
-              <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-                <div className="md:flex md:justify-between">
-                  <div className="mb-6 md:mb-0">
+            <footer className="bg-white dark:bg-gray-900 flex flex-col lg:flex-row items-center">
+              <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
+                <div className="md:flex md:justify-between flex flex-col lg:flex-row items-center">
+                  <div className="mb-6 md:mb-0 flex flex-col items-center">
                     <a
                       href="https://tripsyncer.com/"
                       className="flex items-center mb-10"
@@ -62,10 +62,10 @@ export default function RootLayout({
                   </div>
                   <div className="grid grid-cols-1 gap-8 sm:gap-32 sm:grid-cols-3">
                     <div>
-                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white flex flex-col items-center">
                         Useful Links
                       </h2>
-                      <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                      <ul className="text-gray-500 dark:text-gray-400 font-medium flex flex-col items-center">
                         <li className="mb-4">
                           <a
                             href="https://tripsyncer.com/"
@@ -77,10 +77,10 @@ export default function RootLayout({
                       </ul>
                     </div>
                     <div>
-                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white flex flex-col items-center">
                         Help & Support
                       </h2>
-                      <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                      <ul className="text-gray-500 dark:text-gray-400 font-medium flex flex-col items-center">
                         <li className="mb-4">
                           <a href="!#" className="hover:underline ">
                             FAQs
@@ -107,7 +107,7 @@ export default function RootLayout({
                       </ul>
                     </div>
                     <div>
-                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                      <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white flex flex-col items-center">
                         Let’s Try Out
                       </h2>
                       <div className="flex justify-center flex-col gap-3">

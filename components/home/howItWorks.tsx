@@ -8,18 +8,14 @@ interface Step {
 }
 
 const MobileView = ({ image }: { image: string }) => (
-  <div className="">
-    <div className="relative mx-auto border-gray-300 dark:border-gray-900 bg-gray-300 dark:bg-gray-900 border-[10px] rounded-[1.8rem] h-[450px] w-[225px]">
-      <div className="h-[24px] w-[2px] bg-gray-300 dark:bg-gray-900 absolute -start-[12px] top-[54px] rounded-s-lg"></div>
-      <div className="h-[34px] w-[2px] bg-gray-300 dark:bg-gray-900 absolute -start-[12px] top-[93px] rounded-s-lg"></div>
-      <div className="h-[34px] w-[2px] bg-gray-300 dark:bg-gray-900 absolute -start-[12px] top-[134px] rounded-s-lg"></div>
-      <div className="h-[48px] w-[2px] bg-gray-300 dark:bg-gray-900 absolute -end-[12px] top-[106px] rounded-e-lg"></div>
-      <div className="rounded-[1.5rem] overflow-hidden w-[204px] h-[424px] bg-white dark:bg-gray-900">
-        <img
-          src={image}
-          className="hidden dark:block w-[204px] h-[424px]"
-          alt=""
-        />
+  <div className="flex justify-center lg:justify-end">
+    <div className="relative mx-auto border-gray-300 dark:border-slate-600 bg-gray-300 border-[10px] rounded-[2.5rem] h-[450px] w-[225px]">
+      <div className="h-[24px] w-[2px] bg-gray-300 dark:border-slate-600 absolute -start-[12px] top-[54px] rounded-s-lg"></div>
+      <div className="h-[34px] w-[2px] bg-gray-300 dark:border-slate-600 absolute -start-[12px] top-[93px] rounded-s-lg"></div>
+      <div className="h-[34px] w-[2px] bg-gray-300 dark:border-slate-600 absolute -start-[12px] top-[134px] rounded-s-lg"></div>
+      <div className="h-[48px] w-[2px] bg-gray-300 dark:border-slate-600 absolute -end-[12px] top-[106px] rounded-e-lg"></div>
+      <div className="rounded-[1.5rem] overflow-hidden w-full h-full bg-white dark:border-slate-600">
+        <img src={image} className="object-fill w-full h-full" alt="" />
       </div>
     </div>
   </div>
